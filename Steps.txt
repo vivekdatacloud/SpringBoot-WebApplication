@@ -9,7 +9,7 @@ sudo apt-get install maven -y
 
 sudo apt-get update -y
 sudo apt-get install docker.io -y
-service docker restart
+service docker restart -y
 sudo usermod -aG docker $USER
 newgrp docker
 sudo chmod 666 /var/run/docker.sock
